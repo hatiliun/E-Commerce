@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/archivoCss.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <!-- SEO -->
+  <meta name="keywords" content="hardware, computadora, compu, pc">
+  <meta name="description"
+    content="El sitio con mejores ofertas y la mayor variedad de productos del mercado a los mejores precios del pais">
+
+
+  <title>Productos</title>
+</head>
+
+
+<body>
+
+  <div id="grilla">
+    <!-- HEADER -->
+    <header class="border">
+
+      <a href="./index.html"><img class="headerLogo" src="./assets/image/logocompumax.png" alt="Logo"></a>
+      <input class="headerBarra" type="Barra" placeholder="Busqueda">
+
+      <ul class="headerEnlaces">
+        <li><a class="headerEnlaces_item" href="#">Productos</a></li>
+        <li><a class="headerEnlaces_item" href="./assets/pages/cuenta.html">Mi cuenta</a></li>
+        <li><a class="headerEnlaces_item" href="#">Carrito</a></li>
+      </ul>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon fa-solid fa-bars"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h1>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active hover_menuHamburguesa" aria-current="page" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover_menuHamburguesa" href="./assets/pages/cuenta.html">Mi cuenta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover_menuHamburguesa" href="#">Carrito</a>
+            </li>
+
+    </header>
+    <!-- MAIN -->
+    <main>
+
+      <div class="container_productos">
+        <div class="row container_productos" id="items"></div>
+
+        <template id="template-card">
+
+          <div class="producto">
+            <img src="" alt="">
+            <div class="informacion">
+              <h5 class="descripcion letraChica">Titulo</h5>
+              <div class="simboloPeso">
+                <span class="precio letraGrande">$</span>
+                <p class="precio letraGrande">precio</p>
+              </div>
+
+            </div>
+            <button class="button-product">Comprar</button>
+          </div>
+      </div>
+      </template>
+
+
+
+  </div>
+
+  <!-- CARRITO DE COMPRAS -->
+  <div class="container">
+    <div class="centrado-carrito">
+      <a class="btn-cart" data-bs-toggle="collapse" href="#collapseExample" role="button">
+        <img src="./assets/image/imagenCarrito.png" alt="" class="img-cart" />
+      </a>
+    </div>
+
+    <div class="collapse" id="collapseExample">
+      <div id="carrito">
+        <table class="table" id="lista-carrito">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Quitar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+            </tr>
+          </tbody>
+
+      </div>
+      </table>
+      <div class="totalito" class="container-fluid text-center">
+        Total:$
+        <div class="total">0</div>
+      </div>
+      <div class="centrado">
+        <button type="button" class="btn btn-outline-danger" id="vaciar-carrito">
+          Vaciar Carrito
+        </button>
+        <button id="btn-alert" type="button" class="btn btn-outline-success" id="vaciar-carrito">
+          Confirmar Compra
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footerProductos">
+    <div id="grillaFooter">
+      <div class="footer1">
+        <ul class="patrocinadores">
+          <li><img class="patrocinador1" src="./assets/image/intel.png"
+              alt="Aqui deberia de haber imagen de algun patrocinador"></li>
+          <li><img class="patrocinador2" src="./assets/image/nvidia.png"
+              alt="Aqui deberia de haber imagen de algun patrocinador"></li>
+          <li><img class="patrocinador3" src="./assets/image/amd.png"
+              alt="Aqui deberia de haber imagen de algun patrocinador"></li>
+        </ul>
+      </div>
+
+      <div class="footer2">
+        <a class="contactanos hoverContactanos" href="#">Contactanos</a>
+        <ul>
+          <li>
+            <p class="pRedesSociales">Seguinos en:</p>
+          </li>
+          <li> <a href="#"><img class="redSocial1 botonFacebook" src="./assets/image/facebook.jpg"
+                alt="Imagen Facebook"></a></li>
+          <li> <a href="#"><img class="redSocial2 botonInstagram" src="./assets/image/instagram.jpg"
+                alt="Imagen Instagram"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/5146a8f90e.js" crossorigin="anonymous"></script>
+  <!-- <script src="./proyectoFinalSimplificado.js"></script> -->
+  <script src="./carritoProductos.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 195.999,
+      "id": 1,
+      "title": "Placa de video TUF RTX™ 3070",
+      "thumbnailUrl": "/assets/image/gpu1.png"
+    },
+    {
+      "precio": 350.999,
+      "id": 2,
+      "title": "Placa de video AORUS RX 6900 XT",
+      "thumbnailUrl": "./assets/image/gpu2.png"
+    },
+    {
+      "precio": 100.999,
+      "id": 3,
+      "title": "Placa de video ZOTAC GTX 1660 SUPER",
+      "thumbnailUrl": "./assets/image/gpu3.png"
+    },
+    {
+      "precio": 133.999,
+      "id": 4,
+      "title": "Placa de video ASUS RTX 3060",
+      "thumbnailUrl": "./assets/image/gpu4.png"
+    },
+    {
+      "precio": 280.999,
+      "id": 5,
+      "title": "Placa de video EVGA RTX 3080",
+      "thumbnailUrl": "./assets/image/gpu5.png"
+    },
+    {
+      "precio": 86.999,
+      "id": 6,
+      "title": "Placa de video PALIT GTX 1660 TI",
+      "thumbnailUrl": "./assets/image/gpu6.png"
+    }
+  ]
