@@ -383,8 +383,13 @@ footer {
 
   
 .modal-content {
-  border-radius: 1.3rem;
+    border-style: solid;
+    box-shadow: 0 0 0.5em black;
+    border-color: #5353e4;
+    border-radius: 20px;
 }
+
+
 
 .anchoModal {
  max-width: 800px;
@@ -396,7 +401,40 @@ footer {
 
 .tablaImagen > img {
   width: 150px;
+  max-width: 100%;
+  height: auto;
 }
+
+.table {
+  vertical-align: middle;
+}
+
+.modal-header > h5 {
+  margin-left: auto;
+}
+
+@media (max-width: 817px) {
+  .modal-content {
+    font-size: 15px;
+  } 
+  .anchoModal {
+    max-width: 578px;
+  }
+} 
+  
+ 
+
+ @media (max-width: 426px) {
+  .modal-content {
+    font-size: 10px;
+  } } 
+ 
+  @media (max-width: 321px) {
+    .modal-content {
+      font-size: 5px;
+    } } 
+   
+
 
 .tablaTituloPrecioCantidadId {
   padding-top: 55px !important; 
