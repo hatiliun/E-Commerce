@@ -132,7 +132,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 100px; }
+  margin-top: 188px; }
 
 .footer1 {
   background-color: white;
@@ -311,7 +311,7 @@ footer {
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 50px; }
+  padding-top: 20px; }
 
 
 .producto {
@@ -359,10 +359,6 @@ footer {
   margin-bottom: 34px;
 }
   
-
-.informacion * + * {
-  margin-bottom: 1em; }
-
 .simboloPeso {
   display: inline-flex;
 }
@@ -386,6 +382,39 @@ footer {
   box-shadow: 2px 2px 2px bisque; }
 
   
+.modal-content {
+  border-radius: 1.3rem;
+}
+
+.anchoModal {
+ max-width: 800px;
+}
+
+.modalArriba {
+  height: 75%;
+}
+
+.tablaImagen > img {
+  width: 150px;
+}
+
+.tablaTituloPrecioCantidadId {
+  padding-top: 55px !important; 
+  text-align: center;
+}
+
+.modal-header {
+  color: #5353e4;
+}
+
+.modal-header > h5 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.centrarTextoHeaderModal {
+  text-align: center;
+}
 
 
   /* CUENTA.HTML */

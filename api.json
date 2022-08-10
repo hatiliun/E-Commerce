@@ -3,7 +3,7 @@
       "precio": 195.999,
       "id": 1,
       "title": "Placa de video TUF RTX™ 3070",
-      "thumbnailUrl": "/assets/image/gpu1.png"
+      "thumbnailUrl": "./assets/image/gpu1.png"
     },
     {
       "precio": 350.999,

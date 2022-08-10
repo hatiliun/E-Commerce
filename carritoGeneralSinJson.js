@@ -37,43 +37,6 @@ function cargarEventListeners() {
 }
 //FUNCIONES
 
-// PINTANDO LAS CARDS AL ROW DEL HTML
-const items = document.getElementById('items')
-const templateCard = document.getElementById("template-card").content
-const fragment = document.createDocumentFragment()
-
-
-// LEYENDO LAS CARDS DEL JSON CON FETCH 
-
-document.addEventListener('DOMContentLoaded', () => {
-  fetchData()
-})
-
-// Traer productos
-const fetchData = async () => {
-  const res = await fetch('api.json');
-  const data = await res.json()
-  // console.log(data)
-  pintarCards(data)
-  
-}
-
-// Pintar productos
-const pintarCards = data => {
-  data.forEach(item => {
-    templateCard.querySelector('h5').textContent = item.title
-    templateCard.querySelector('p').textContent = item.precio
-    imagenesCarrito = templateCard.querySelector('img').setAttribute("src", item.thumbnailUrl)
-    templateCard.querySelector('.button-product').dataset.id = item.id
-    const clone = templateCard.cloneNode(true)
-    fragment.appendChild(clone)
-  })
-  items.appendChild(fragment)
-}
-
-
-
-
 // (1) A través del boton podemos acceder al producto seleccionado
 function agregarProducto(e) {
   e.preventDefault();
@@ -154,13 +117,10 @@ function carritoHTML() {
   //Recorre el carrito y genera el HTML
   articulosCarrito.forEach((producto) => {
     const row = document.createElement("tr");
-    
-    row.innerHTML = `
-    <td class="tablaImagen"><img src=${producto.imagen} alt=""></td>
-    <td class="tablaTituloPrecioCantidadId">${producto.titulo}</td>
-    <td class="tablaTituloPrecioCantidadId">${producto.precio}</td>
-    <td class="tablaTituloPrecioCantidadId">${producto.cantidad}</td>
-    <td class="tablaTituloPrecioCantidadId"><a href="" class="borrar-producto" id="${producto.id}">x</a> </td>`; // CLASE PARA BORRAR EL PRODUCTO "X"
+    row.innerHTML = `<td>${producto.titulo}</td>
+    <td>${producto.precio}</td>
+    <td>${producto.cantidad}</td>
+    <td><a href="" class="borrar-producto" id="${producto.id}">x</a> </td>`; // CLASE PARA BORRAR EL PRODUCTO "X"
     //Agrega el HTML del carrito en el tbody 
     contenedorCarrito.appendChild(row);
     // creamos el json transformado ya a string para que guarde los valores del carrito que vaya llenando el usuario
@@ -244,4 +204,3 @@ function seAñadeProductoToastify() {
 
   }).showToast();
 }
-
