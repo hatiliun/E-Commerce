@@ -27,28 +27,33 @@ const validarCampos = () => {
   let error = [];
   if (nombre.value.length < 3) {
     error[0] = true;
-    error[1] = "El nombre no puede contener menos de 3 caracteres";
+    error[1] = "El nombre no puede contener menos de 3 caracteres",
+    console.log("El nombre no puede contener menos de 3 caracteres") ;
     return error;
   } else if (nombre.value.length > 40) {
     error[0] = true;
-    error[1] = "El nombre no puede contener mas de 40 caracteres";
+    error[1] = "El nombre no puede contener mas de 40 caracteres",
+    console.log("El nombre no puede contener mas de 40 caracteres") ;
     return error;
   } else if (apellido.value.length < 3 || apellido.value.length > 40)
   { 
       error [0] = true ;
-      error [1] = "Ingrese un apellido valido por favor" ;
+      error [1] = "Ingrese un apellido valido por favor" ,
+      console.log("Ingrese un apellido valido por favor") ;
       return error;
   }
   else if (correo.value.length < 3 || correo.value.length > 40 || correo.value.indexOf ("@") == -1 || correo.value.indexOf (".") == -1 )
             { 
                 error [0] = true ;
-                error [1] = `"El correo es invalido, asegurese que contenga los siguientes caracteres "@" y "." ` ;
+                error [1] = `El correo es invalido, asegurese que contenga los siguientes caracteres "@" y "." ` ,
+                console.log(`El correo es invalido, asegurese que contenga los siguientes caracteres "@" y "." `) ;
                 return error;
             }
     else if (contraseña.value.length < 3 || contraseña.value.length > 40)
             { 
                 error [0] = true ;
-                error [1] = "Ingrese la contraseña a registrar por favor, no puede tener menos de 3 caracteres" ;
+                error [1] = "Ingrese la contraseña a registrar por favor, no puede tener menos de 3 caracteres" ,
+                console.log("Ingrese la contraseña a registrar por favor, no puede tener menos de 3 caracteres") ;
                 return error;
             }
     
